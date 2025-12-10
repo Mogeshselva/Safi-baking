@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safi's Baking👩🏻‍🍳- Homemade Happiness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="icon" href="./Safi's Baking.png" sizes="1600x1200">
+    
+    
+    <!-- Animated fadein  -->
+     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+
+    <style>
+        :root {
+            --primary: #F4E1D2; /* Dough color */
+            --accent: #E55812; /* Burnt Orange/Oven glow */
+            --text: #4A3B32; /* Dark Chocolate */
+            --secondary: #FFB7B2; /* Frosting Pink */
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Fredoka', sans-serif;
+            background-color: var(--primary);
+            color: var(--text);
+            line-height: 1.6;
+            user-select:none;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-family: 'Patrick Hand', cursive; /* Handwritten style */
+            font-weight: bold;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            background: var(--white);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text);
+            margin-left: 20px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Hero Section */
+        .hero {
+
+            text-align: center;
+            padding: 5rem 1rem;
+            background: linear-gradient(rgba(244, 225, 210, 0.7)), url('https://www.shutterstock.com/image-photo/baking-cooking-colorful-background-ingredients-600nw-2454907021.jpg');
+            background-size: cover;
+            
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+            text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--white);
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 3px solid transparent;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05) rotate(-2deg);
+            box-shadow: 0 10px 20px rgba(229, 88, 18, 0.3);
+            background-color: #fff;
+            color: var(--accent);
+            border: 3px solid var(--accent);
+        }
+
+        /* Features Section */
+        .trust-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 4rem 5%;
+            background-color: var(--white);
+            text-align: center;
+        }
+
+        .trust-card {
+            flex: 1;
+            min-width: 250px;
+            margin: 1rem;
+            padding: 2rem;
+            border-radius: 20px;
+            background: var(--primary);
+            box-shadow: 5px 5px 0px var(--secondary);
+            transition: transform 0.3s;
+        }
+
+        .trust-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .trust-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        /* Menu Preview */
+        .menu-section {
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .product-image {
+            height: 200px;
+            background-color: #ddd;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .price {
+            display: inline-block;
+            background: var(--secondary);
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text);
+            color: var(--primary);
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; } /* Simple hiding for this demo */
+        }
+        .logo-png{
+
+      width: 90px;
+      height: 90px;
+      
+    }
+    </style>
+</head>
+<body>
+
+    <nav style="background-color: rgba(255, 255, 255, 0.6); backdrop-filter: blur(10px);z-index: 1030;">
+
+        <img src="./Safi's Baking.png" href="#"class="navbar-brand logo-png " >
+        <div class="logo">👩🏻‍🍳 SAFI's BAKING</div>
+
+        
+        <div class="nav-links">
+            <a href="#menu">The Goods</a>
+            <a href="#about">Our Story</a>
+            <a href="#contact">Stalk Us</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="menu">
+        <h1 class="animate__animated animate__zoomIn animate__delay-2s">We Don't Just Bake.<br>We Perform Magic.</h1>
+        <p>Homemade treats made with 100% real butter and 0% regret. Warning: May cause uncontrollable smiling.</p>
+        <a href="https://wa.me/+919944785675"target="_blank" class="cta-button">Reach Our Kitchen !</a>
+    </section>
+
+    <section class="trust-section" >
+        <div class="trust-card">
+            <h3>👵 Grandma Approved</h3>
+            <p>We use recipes stolen from our grandmother's vault. (Don't tell her, she thinks she lost them).</p>
+        </div>
+        <div class="trust-card">
+            <h3>🧈 Real Butter Only</h3>
+            <p>Margarine is illegal in this kitchen. We use the good stuff. Your tastebuds will know the difference.</p>
+        </div>
+        <div class="trust-card">
+            <h3>🧼 Clean Freak Zone</h3>
+            <p>We bake in a kitchen so clean you could eat off the floor. But please don't. Use a plate.</p>
+        </div>
+    </section>
+
+    <section id="about" class="menu-section">
+        <h2 style="font-size: 3rem; margin-bottom: 1rem;">The "I deserve this" Menu</h2>
+        <p>Calories don't count if you eat them standing up. That's science.</p>
+        
+        <div class="menu-grid">
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('./chocolate-wide-banner.webp');"></div>
+                <div class="product-info">
+                    <h3>The Choco-pocalypse</h3>
+                    <p>A cookie so chocolatey it technically qualifies as a dessert supernova.</p>
+                    <span class="price">₹350 </span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('./cupcake.avif');"></div>
+                <div class="product-info">
+                    <h3>Cloud  Cupcakes</h3>
+                    <p>Frosting piled so high you might need a climbing harness to eat it.</p>
+                    <span class="price">₹250 </span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('./chocolate-brownie.jpg');"></div>
+                <div class="product-info">
+                    <h3>The "Legal" Brownie</h3>
+                    <p>Fudgy, dense, and totally addictive. But perfectly legal. We promise.</p>
+                    <span class="price">₹300 </span>
+                </div>
+            </div>
+            
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+    <a href="menu.html" class="cta-button">View Full Menu & Drool ➜</a>
+</div>
+    </section>
+
+    <footer id="contact">
+        <h2 style="color: var(--secondary);">Ready to ruin your diet?</h2>
+        <p style="margin: 20px 0;">DM us to order. We bake fresh, so be patient (it's worth it).</p>
+        <p>📍 Baking from a secret location in [Natham] <br> 📞 +91-9944785675</p>
+        <br>
+        <small>© 2025 Safi'sBaking. All rights reserved. No cookies were harmed (until they were eaten).</small>
+    </footer>
+
+</body>
+</html>

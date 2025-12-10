@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Menu - Safi's Baking👩🏻‍🍳</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Patrick+Hand&display=swap" rel="stylesheet">
+     <link rel="icon" href="./Safi's Baking.png" sizes="1600x1200">
+    <style>
+        :root {
+            --primary: #F4E1D2; 
+            --accent: #E55812; 
+            --text: #4A3B32; 
+            --secondary: #FFB7B2; 
+            --white: #ffffff;
+            --paper: #fffcf5; /* Slightly off-white for paper look */
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Fredoka', sans-serif;
+            background-color: var(--primary);
+            color: var(--text);
+            padding: 2rem;
+
+            user-select:none;
+        }
+
+        /* The Paper Menu Container */
+        .menu-paper {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--paper);
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 2px dashed var(--accent); /* Dashed line looks like a coupon/recipe */
+            border-radius: 10px;
+            position: relative;
+        }
+
+        /* Header */
+        header { text-align: center; margin-bottom: 3rem; }
+        
+        h1 {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 3.5rem;
+            color: var(--accent);
+        }
+
+        h2 {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--primary);
+            display: inline-block;
+        }
+
+        .back-btn {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .back-btn:hover { color: var(--accent); }
+
+        /* Menu Items */
+        .menu-category { margin-bottom: 3rem; }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 0.5rem;
+        }
+
+        .item-details h3 { font-size: 1.3rem; margin-bottom: 0.2rem; }
+        .item-desc { font-size: 0.9rem; color: #666; font-style: italic; }
+        .item-price { font-weight: bold; color: var(--accent); font-size: 1.2rem; white-space: nowrap; margin-left: 20px;}
+
+        /* Warnings */
+        .warning-box {
+            background: var(--secondary);
+            padding: 1rem;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 3rem;
+            font-weight: bold;
+            transform: rotate(-1deg);
+        }
+
+        @media (max-width: 600px) {
+            .menu-paper { padding: 1.5rem; }
+            h1 { font-size: 2.5rem; }
+            .menu-item { flex-direction: column; }
+            .item-price { margin-top: 5px; margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-btn">⬅ Take me back to safety</a>
+
+    <div class="menu-paper">
+        <header>
+            <h1>The Official List of Temptations</h1>
+            <p>We are not responsible for any buttons popping off your shirt.</p>
+        </header>
+
+        <div class="menu-category">
+            <h2>🥞Brownie's (The Classics)</h2>
+            
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>Ragi Brownie</h3>
+                    <p class="item-desc">A wholesome, chocolaty brownie made with nutrient-rich ragi flour for a soft, fudgy bite</p>
+                </div>
+                <div class="item-price">₹360 </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>Wheat Brownie</h3>
+                    <p class="item-desc">A soft, fudgy brownie made with wholesome wheat flour for a healthier chocolaty treat.</p>
+                </div>
+                <div class="item-price">₹320 </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>Millet Brownie</h3>
+                    <p class="item-desc">A nutritious brownie crafted with millet flour, offering a wholesome, slightly nutty twist on a classic chocolaty treat.</p>
+                </div>
+                <div class="item-price">₹360 </div>
+            </div>
+             <div class="menu-item">
+                <div class="item-details">
+                    <h3>Maida Brownie</h3>
+                    <p class="item-desc">A soft, rich, and fudgy brownie made with refined flour for a classic chocolaty taste.</p>
+                </div>
+                <div class="item-price">₹360 </div>
+            </div>
+
+           <div class="menu-item">
+                <div class="item-details">
+                    <h3>Biscoff Brownie</h3>
+                    <p class="item-desc">A rich, fudgy brownie swirled with creamy Biscoff spread for a warm caramel-spiced flavor in every bite.</p>
+                </div>
+                <div class="item-price">₹400 </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>Oreo Brownie</h3>
+                    <p class="item-desc">A decadent, fudgy brownie loaded with crunchy Oreo pieces for the perfect cookies-and-chocolate combo.</p>
+                </div>
+                <div class="item-price">₹350 </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>KitKat Brownie</h3>
+                    <p class="item-desc">A rich, gooey brownie topped with crispy KitKat chunks for a perfect mix of crunch and chocolatey indulgence.</p>
+                </div>
+                <div class="item-price">₹350 </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h2>🍫 Chocolate's</h2>
+
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>Milk Chocolate</h3>
+                    <p class="item-desc">Smooth, creamy chocolate with a rich, sweet flavor that melts instantly in every bite.</p>
+                </div>
+                <div class="item-price">₹350 </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>Dark Chocolate</h3>
+                    <p class="item-desc">A wild blast of bold cocoa that hits like a chocolate thunderstorm in your mouth! 🍫⚡</p>
+                </div>
+                <div class="item-price">₹350 </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>White Chocolate</h3>
+                    <p class="item-desc">A creamy-sweet flavor bomb that melts like a sugar cloud exploding in your mouth! 🤍</p>
+                </div>
+                <div class="item-price">₹350 </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>Triple Chocolate</h3>
+                    <p class="item-desc">A crazy choc-overload trio that crashes into your taste buds like a sweet, gooey chocolate tsunami! 🌪️</p>
+                </div>
+                <div class="item-price">₹350 </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h2>🎁 Special Boxes</h2>
+
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>The "I'm Sorry" Box</h3>
+                    <p class="item-desc">Assorted brownies. Cheaper than a lawyer, effective for minor arguments.</p>
+                </div>
+                <div class="item-price">₹25</div>
+            </div>
+        </div>
+
+        <div class="warning-box">
+            ⚠ Allergy Warning: Made in a kitchen that handles nuts, dairy, eggs, and lots of love.
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <p>Ready to order?</p>
+            <h3 style="color: var(--accent);">Call +91-9944785675</h3>
+        </div>
+
+    </div>
+
+</body>
+</html>
